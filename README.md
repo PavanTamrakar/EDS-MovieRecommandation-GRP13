@@ -1,10 +1,4 @@
-# EDS-MovieRecommandation-GRP13
-
-## Group - 13
-## Movie Recommandation using R lang..
-## Pavan Tamrakar 117
-## Vishwam Agrawal 121
-## Adarsh Tiwari 119
+# Movie Recommendation System: Project using R and Machine learning
 
 ## Aim of Project
 The main goal of this machine learning project is to build a recommendation engine that recommends movies to users. This R project is designed to understand the functioning of a recommendation system. I developed an *Item Based Collaborative Filter*. This helped me gain experience of implementing my R, Data Science, and Machine learning skills in a real-life project.
@@ -57,3 +51,23 @@ The similarity between single products and related products can be determined wi
 - Calculate the similarity between i<sub>1</sub> and i<sub>2</sub>.
 
 I built this filtering system by splitting the dataset into 80% training set and 20% test set.
+
+### Building the recommendation system
+Now, I explored the various parameters of the *Item Based Collaborative Filter*. These parameters are default in nature. In the first step, k denotes the number of items for computing their similarities. Here, k is equal to 30. Therefore, the algorithm will now identify the k most similar items and store their number. 
+
+### Exploring data science recommendation system model
+Using the ```getModel()``` function, I retrieved the ```recommen_model```. I then found the class and dimensions of the similarity matrix, that is, contained within ```model_info```. Finally, I generated a heatmap, that will contain the top 20 items and visualize the similarity shared between them.
+
+In the next step of the ML project, I carried out the sum of rows and columns with the similarity of the objects above 0. I visualized the sum of columns through a distribution.
+
+### Building Recommender System on dataset using R
+I created a ```top_recommendations``` variable which I initialized to 10, specifying the number of films to each user. I then used the ```predict()``` function that identified similar items and ranked them appropriately. Here, each rating is used as a weight. Each weight is multiplied with related similarities. Finally, I added everything in the end.
+
+
+
+Cr:DataFlair
+
+
+
+
+
